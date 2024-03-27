@@ -7,26 +7,37 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
-@RequestMapping("/product")
+@RequestMapping("/products")
 public class ProductController {
 
     @Autowired
     private ProductService productService;
-
-    @PostMapping
-    public ObjectId save(@RequestBody Product product){
-        return productService.save(product);
-    }
 
     @GetMapping
     public List<Product> getProducts() {
         return productService.getAllProducts();
     }
 
-    @DeleteMapping("/{id}")
-    public void delete(@PathVariable ObjectId _id){
+    @GetMapping("/{_id}")
+    public Optional<Product> getProduct(@PathVariable String _id) {
+        return productService.getProduct(_id);
+    }
+
+    @GetMapping("/category")
+    public List<Product> getProductsByCategory(@RequestParam String category) {
+        return productService.getProductsByCategory(category);
+    }
+
+    @PostMapping
+    public String save(@RequestBody Product product){
+        return productService.save(product);
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public void delete(@PathVariable String _id){
         productService.delete(_id);
     }
 }

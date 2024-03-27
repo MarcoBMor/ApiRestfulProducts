@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class ProductServiceImpl implements ProductService{
@@ -15,23 +16,33 @@ public class ProductServiceImpl implements ProductService{
     private ProductRepository productRepository;
 
     @Override
-    public ObjectId save(Product product) {
+    public String save(Product product) {
         return productRepository.save(product).get_id();
     }
 
     // @Override
-    // public List<Product> getProductStartWith(String name) {
+    //    // public List<Product> getProductStartWith(String name) {
     //     return productRepository.findByNameStartsWith(name);
     // }
 
     @Override
-    public void delete(ObjectId _id) {
+    public void delete(String _id) {
         productRepository.deleteById(_id);
     }
 
     @Override
     public List<Product> getAllProducts() {
         return productRepository.findAll();
+    }
+
+    @Override
+    public Optional<Product> getProduct(String _id) {
+        return productRepository.findById(_id);
+    }
+
+    @Override
+    public List<Product> getProductsByCategory(String category) {
+        return productRepository.findAllByCategory(category);
     }
 
 }

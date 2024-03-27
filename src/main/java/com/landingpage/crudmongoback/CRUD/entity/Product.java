@@ -1,26 +1,30 @@
 package com.landingpage.crudmongoback.CRUD.entity;
 
-import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "products")
 public class Product {
 
-
+    public enum Category {
+        mobiles,
+        computers,
+        tablets,
+        processors
+    }
     @Id
-    private ObjectId _id;
+    private String _id;
     private String title;
     private double price;
     private String description;
-    private String category;
+    private Category category;
     private String image;
 
     public Product() {
 
     }
 
-    public Product(ObjectId _id, String title, double price, String description, String category, String image) {
+    public Product(String _id, int id, String title, double price, String description, Category category, String image) {
         this._id = _id;
         this.title = title;
         this.price = price;
@@ -29,11 +33,11 @@ public class Product {
         this.image = image;
     }
 
-    public ObjectId get_id() {
+    public String get_id() {
         return _id;
     }
 
-    public void set_id(ObjectId _id) {
+    public void set_id(String _id) {
         this._id = _id;
     }
 
@@ -61,11 +65,11 @@ public class Product {
         this.description = description;
     }
 
-    public String getCategory() {
+    public Category getCategory() {
         return category;
     }
 
-    public void setCategory(String category) {
+    public void setCategory(Category category) {
         this.category = category;
     }
 

@@ -8,7 +8,10 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface ProductRepository extends MongoRepository<Product, ObjectId> {
+public interface ProductRepository extends MongoRepository<Product, String> {
+    List<Product> findExamplesByCategory(String category, int limit);
+
+    List<Product> findAllByCategory(String category);
 
     //List<Product> findByNameStartsWith(String name);
 

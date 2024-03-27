@@ -1,0 +1,30 @@
+[
+  {
+    "title": "iPhone 13 Pro",
+    "price": 1099.99,
+    "description": "The latest iPhone from Apple with cutting-edge technology.",
+    "category": "mobiles",
+    "image": "iphone13.jpg"
+  },
+  {
+    "title": "MacBook Pro",
+    "price": 1799.99,
+    "description": "A powerful and stylish laptop for creative professionals.",
+    "category": "computers",
+    "image": "macbookpro.jpg"
+  },
+  {
+    "title": "iPad Pro",
+    "price": 999.99,
+    "description": "A powerful tablet with Liquid Retina display and Apple Pencil support.",
+    "category": "tablets",
+    "image": "ipadpro.jpg"
+  },
+  {
+    "title": "AMD Ryzen 9 5900X",
+    "price": 549.99,
+    "description": "A high-performance processor for computer enthusiasts.",
+    "category": "processors",
+    "image": "ryzen5900x.jpg"
+  }
+]
