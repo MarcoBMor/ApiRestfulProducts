@@ -11,6 +11,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/products")
+@CrossOrigin(origins = "http://localhost:4200")
 public class ProductController {
 
     @Autowired
@@ -26,9 +27,14 @@ public class ProductController {
         return productService.getProduct(_id);
     }
 
-    @GetMapping("/category")
-    public List<Product> getProductsByCategory(@RequestParam String category) {
-        return productService.getProductsByCategory(category);
+    @GetMapping("/category/{category}")
+    public List<Product> getProductsByCategory(@PathVariable String category,
+                                               @RequestParam(required = false, defaultValue = "0") int limit) {
+        if (limit <= 0) {
+            return productService.getProductsByCategory(category);
+        } else {
+            return productService.getExamplesByCategory(category, limit);
+        }
     }
 
     @PostMapping

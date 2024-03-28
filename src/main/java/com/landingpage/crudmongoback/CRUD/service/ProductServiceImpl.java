@@ -4,6 +4,7 @@ import com.landingpage.crudmongoback.CRUD.entity.Product;
 import com.landingpage.crudmongoback.CRUD.repository.ProductRepository;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -38,6 +39,11 @@ public class ProductServiceImpl implements ProductService{
     @Override
     public Optional<Product> getProduct(String _id) {
         return productRepository.findById(_id);
+    }
+
+    @Override
+    public List<Product> getExamplesByCategory(String category, int limit) {
+        return productRepository.findAllByCategory(category, PageRequest.of(0, limit));
     }
 
     @Override

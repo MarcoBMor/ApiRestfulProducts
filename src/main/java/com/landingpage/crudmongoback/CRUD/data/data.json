@@ -1,30 +1,284 @@
+
+
 [
+    {
+      "title": "iPhone 13 Pro",
+      "price": 1099.99,
+      "description": "The latest iPhone from Apple with cutting-edge technology.",
+      "category": "mobiles",
+      "image": "iphone13.jpg"
+    },
+    {
+      "title": "Samsung Galaxy S21 Ultra",
+      "price": 1199.99,
+      "description": "A premium Android phone with high-resolution camera and stunning display.",
+      "category": "mobiles",
+      "image": "s21ultra.jpg"
+    },
+    {
+      "title": "Google Pixel 6 Pro",
+      "price": 899.99,
+      "description": "A phone with excellent camera quality and smooth performance.",
+      "category": "mobiles",
+      "image": "pixel6pro.jpg"
+    },
+    {
+      "title": "OnePlus 9 Pro",
+      "price": 999.99,
+      "description": "A phone with high-refresh-rate display and fast charging.",
+      "category": "mobiles",
+      "image": "oneplus9pro.jpg"
+    },
+    {
+      "title": "Xiaomi Mi 11",
+      "price": 799.99,
+      "description": "A phone with excellent value for money and powerful hardware.",
+      "category": "mobiles",
+      "image": "mi11.jpg"
+    },
+    {
+      "title": "Sony Xperia 1 III",
+      "price": 1299.99,
+      "description": "A phone with a 4K HDR OLED display and high-resolution camera.",
+      "category": "mobiles",
+      "image": "xperia1iii.jpg"
+    },
+    {
+      "title": "Huawei P50 Pro",
+      "price": 999.99,
+      "description": "A phone with a Leica Quad camera and 5x optical zoom.",
+      "category": "mobiles",
+      "image": "p50pro.jpg"
+    },
+    {
+      "title": "Realme GT 2 Pro",
+      "price": 699.99,
+      "description": "A phone with a stylish design and ultra-fast 65W charging.",
+      "category": "mobiles",
+      "image": "gt2pro.jpg"
+    },
+    {
+      "title": "Oppo Find X5 Pro",
+      "price": 1099.99,
+      "description": "A phone with Hasselblad camera and LTPO display.",
+      "category": "mobiles",
+      "image": "findx5pro.jpg"
+    },
+    {
+      "title": "Motorola Edge 30 Pro",
+      "price": 899.99,
+      "description": "A phone with Snapdragon 8 Gen 1 processor and long-lasting battery.",
+      "category": "mobiles",
+      "image": "edge30pro.jpg"
+    },
+    {
+      "title": "MacBook Pro",
+      "price": 1799.99,
+      "description": "A powerful and stylish laptop for creative professionals.",
+      "category": "computers",
+      "image": "macbookpro.jpg"
+    },
+    {
+      "title": "Dell XPS 15",
+      "price": 1499.99,
+      "description": "A slim and powerful laptop with an impressive display.",
+      "category": "computers",
+      "image": "xps15.jpg"
+    },
+    {
+      "title": "HP Spectre x360",
+      "price": 1299.99,
+      "description": "A premium convertible with a sleek design and high-resolution touchscreen.",
+      "category": "computers",
+      "image": "spectrex360.jpg"
+    },
+    {
+      "title": "Lenovo ThinkPad X1 Carbon",
+      "price": 1399.99,
+      "description": "An ultralight business laptop with long-lasting battery life.",
+      "category": "computers",
+      "image": "thinkpadx1carbon.jpg"
+    },
+    {
+      "title": "Asus ROG Zephyrus G14",
+      "price": 1299.99,
+      "description": "A compact and powerful gaming laptop with high-refresh-rate display.",
+      "category": "computers",
+      "image": "rogzephyrusg14.jpg"
+    },
+    {
+      "title": "Microsoft Surface Laptop Studio",
+      "price": 1699.99,
+      "description": "A versatile laptop with slide-out touchscreen and powerful performance.",
+      "category": "computers",
+      "image": "surfacelaptopstudio.jpg"
+    },
+    {
+      "title": "Razer Blade 15",
+      "price": 1699.99,
+      "description": "A sleek and powerful gaming laptop with RGB keyboard and high-refresh-rate display.",
+      "category": "computers",
+      "image": "razerblade15.jpg"
+    },
+    {
+      "title": "Acer Swift 5",
+      "price": 999.99,
+      "description": "An ultralight laptop with slim design and latest generation Intel Core processor.",
+      "category": "computers",
+      "image": "acerswift5.jpg"
+    },
+    {
+      "title": "MSI Creator Z16",
+      "price": 1999.99,
+      "description": "A laptop for content creators with Mini LED display and NVIDIA GeForce RTX graphics card.",
+      "category": "computers",
+      "image": "msicreatorz16.jpg"
+    },
+    {
+      "title": "Gigabyte Aero 15 OLED",
+      "price": 1799.99,
+      "description": "A laptop with OLED display and 11th generation Intel Core i9 processor.",
+      "category": "computers",
+      "image": "aero15oled.jpg"
+    },
+    {
+      "title": "iPad Pro",
+      "price": 999.99,
+      "description": "A powerful tablet with Liquid Retina display and support for Apple Pencil.",
+      "category": "tablets",
+      "image": "ipadpro.jpg"
+    },
+    {
+      "title": "Samsung Galaxy Tab S7+",
+      "price": 849.99,
+      "description": "A premium Android tablet with AMOLED display and included S Pen.",
+      "category": "tablets",
+      "image": "tabs7plus.jpg"
+    },
+    {
+      "title": "Microsoft Surface Pro 8",
+      "price": 1299.99,
+      "description": "A versatile tablet with detachable keyboard and optical pen.",
+      "category": "tablets",
+      "image": "surfacepro8.jpg"
+    },
+    {
+      "title": "Huawei MatePad Pro",
+      "price": 799.99,
+      "description": "A tablet with FullView display and Harman Kardon speakers.",
+      "category": "tablets",
+      "image": "matepadpro.jpg"
+    },
+    {
+      "title": "Lenovo Tab P11 Pro",
+      "price": 699.99,
+      "description": "A tablet with OLED display and Dolby Atmos sound.",
+      "category": "tablets",
+      "image": "tabp11pro.jpg"
+    },
+    {
+      "title": "Amazon Fire HD 10",
+      "price": 199.99,
+      "description": "An affordable tablet with Full HD display and up to 12 hours of battery life.",
+      "category": "tablets",
+      "image": "firehd10.jpg"
+    },
+    {
+      "title": "Xiaomi Mi Pad 5",
+      "price": 499.99,
+      "description": "A tablet with high-resolution display and stylus compatibility.",
+      "category": "tablets",
+      "image": "mipad5.jpg"
+    },
+    {
+      "title": "Google Pixel Slate",
+      "price": 899.99,
+      "description": "A tablet with detachable keyboard and support for Google Assistant.",
+      "category": "tablets",
+      "image": "pixelslate.jpg"
+    },
+    {
+      "title": "Sony Xperia Z4 Tablet",
+      "price": 699.99,
+      "description": "A waterproof tablet with front-facing stereo speakers.",
+      "category": "tablets",
+      "image": "xperiaz4tablet.jpg"
+    },
+    {
+      "title": "Asus ZenPad 3S 10",
+      "price": 349.99,
+      "description": "A tablet with 2K display and DTS Headphone:X sound.",
+      "category": "tablets",
+      "image": "zenpad3s10.jpg"
+    },
+    {
+      "title": "AMD Ryzen 9 5900X",
+      "price": 549.99,
+      "description": "A high-performance processor for computer enthusiasts.",
+      "category": "processors",
+      "image": "ryzen5900x.jpg"
+    },
+    {
+      "title": "Intel Core i9-11900K",
+      "price": 599.99,
+      "description": "A high-end processor for gaming and intensive applications.",
+      "category": "processors",
+      "image": "corei911900k.jpg"
+    },
+    {
+      "title": "AMD Ryzen 7 5800X",
+      "price": 449.99,
+      "description": "A high-performance processor for gamers and content creators.",
+      "category": "processors",
+      "image": "ryzen75800x.jpg"
+    },
+    {
+      "title": "Intel Core i7-11700K",
+      "price": 399.99,
+      "description": "A powerful and efficient processor for demanding users.",
+      "category": "processors",
+      "image": "corei711700k.jpg"
+    },
+    {
+      "title": "AMD Ryzen 5 5600X",
+      "price": 299.99,
+      "description": "A high-performance processor for gaming and multitasking.",
+      "category": "processors",
+      "image": "ryzen55600x.jpg"
+    },
+    {
+      "title": "Intel Core i5-11600K",
+      "price": 249.99,
+      "description": "A Core i5 processor for gaming and daily applications.",
+      "category": "processors",
+      "image": "corei511600k.jpg"
+    },
+    {
+      "title": "AMD Ryzen 3 3300X",
+      "price": 149.99,
+      "description": "A Ryzen 3 processor for tight budgets and light gaming.",
+      "category": "processors",
+      "image": "ryzen3300x.jpg"
+    },
+    {
+      "title": "Intel Core i3-10100",
+      "price": 129.99,
+      "description": "A Core i3 processor for basic computing tasks and light multitasking.",
+      "category": "processors",
+      "image": "corei310100.jpg"
+    },
   {
-    "title": "iPhone 13 Pro",
-    "price": 1099.99,
-    "description": "The latest iPhone from Apple with cutting-edge technology.",
-    "category": "mobiles",
-    "image": "iphone13.jpg"
-  },
-  {
-    "title": "MacBook Pro",
-    "price": 1799.99,
-    "description": "A powerful and stylish laptop for creative professionals.",
-    "category": "computers",
-    "image": "macbookpro.jpg"
-  },
-  {
-    "title": "iPad Pro",
-    "price": 999.99,
-    "description": "A powerful tablet with Liquid Retina display and Apple Pencil support.",
-    "category": "tablets",
-    "image": "ipadpro.jpg"
-  },
-  {
-    "title": "AMD Ryzen 9 5900X",
-    "price": 549.99,
-    "description": "A high-performance processor for computer enthusiasts.",
+    "title": "AMD Ryzen Threadripper 3990X",
+    "price": 3999.99,
+    "description": "A high-end desktop processor with 64 cores and 128 threads.",
     "category": "processors",
-    "image": "ryzen5900x.jpg"
+    "image": "threadripper3990x.jpg"
+  },
+  {
+    "title": "Intel Core i9-12900K",
+    "price": 699.99,
+    "description": "An Alder Lake processor with high single-thread performance and efficient multi-threading.",
+    "category": "processors",
+    "image": "corei912900k.jpg"
   }
 ]
