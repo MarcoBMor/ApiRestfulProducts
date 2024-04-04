@@ -7,10 +7,10 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Product {
 
     public enum Category {
-        mobiles,
-        computers,
-        tablets,
-        processors
+        mobile,
+        computer,
+        tablet,
+        processor
     }
     @Id
     private String _id;
@@ -19,18 +19,20 @@ public class Product {
     private String description;
     private Category category;
     private String image;
+    private int annualSales;
 
     public Product() {
 
     }
 
-    public Product(String _id, int id, String title, double price, String description, Category category, String image) {
+    public Product(String _id, int id, String title, double price, String description, Category category, String image, int annualSales) {
         this._id = _id;
         this.title = title;
         this.price = price;
         this.description = description;
         this.category = category;
         this.image = image;
+        this.annualSales = annualSales;
     }
 
     public String get_id() {
@@ -79,5 +81,13 @@ public class Product {
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public int getAnnualSales() {
+        return annualSales;
+    }
+
+    public void setAnnualSales(int annualSales) {
+        this.annualSales = annualSales;
     }
 }

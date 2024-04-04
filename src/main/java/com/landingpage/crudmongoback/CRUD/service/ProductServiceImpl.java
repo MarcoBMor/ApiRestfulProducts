@@ -2,7 +2,6 @@ package com.landingpage.crudmongoback.CRUD.service;
 
 import com.landingpage.crudmongoback.CRUD.entity.Product;
 import com.landingpage.crudmongoback.CRUD.repository.ProductRepository;
-import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
@@ -20,11 +19,6 @@ public class ProductServiceImpl implements ProductService{
     public String save(Product product) {
         return productRepository.save(product).get_id();
     }
-
-    // @Override
-    //    // public List<Product> getProductStartWith(String name) {
-    //     return productRepository.findByNameStartsWith(name);
-    // }
 
     @Override
     public void delete(String _id) {
