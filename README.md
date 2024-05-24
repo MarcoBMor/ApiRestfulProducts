@@ -1,6 +1,6 @@
 # My Api Rest With SpringBoot
 
-Welcome to the repository for **My Api Rest With SpringBoot**! This project contains a RESTful API built using Spring Boot that i made for [MyStoreMadeWithAngular](https://github.com/MarcoBMor/MyStoreWithAngular).
+Welcome to the repository for **My Api Rest With SpringBoot**! This project contains a RESTful API built using Spring Boot that i made for [MyStoreWithAngular](https://github.com/MarcoBMor/MyStoreWithAngular).
 
 This API provides endpoints to manage products, each containing attributes such as title, price, description, image and category. Below are the available endpoints along with their functionalities:
 
@@ -23,6 +23,10 @@ This API provides endpoints to manage products, each containing attributes such 
    }
 
 You cant test these endpoints through the localhost url **http://localhost:8080/**
+
+## Pre-requisites
+- Have a **JDK** installation on your system. Either set the **JAVA_HOME** environment variable pointing to your JDK installation or have the java executable on your **PATH**.
+- [Download](https://maven.apache.org/download.cgi) & [Install](https://maven.apache.org/install.html) Maven
 
 ## Install & Run MyApiRestWithSpringBoot
 Open a GitBash and execute:
